@@ -1,1 +1,89 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif; /* Sets the overall font style */
+  margin: 0; /* Removes default margin around the page */
+  padding: 0; /* Removes default padding */
+  background-color: #f0f0f0; /* Light gray background color */
+  color: #333; /* Dark gray text color */
+}
 
+header {
+  display: flex; /* Aligns items in a horizontal row */
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Centers items vertically */
+  padding: 10px; /* Adds space inside the header */
+  background-color: #007BFF; /* Blue background for the header */
+  color: white; /* White text color */
+}
+
+.content {
+  text-align: center; /* Centers all content horizontally */
+  margin: 20px; /* Adds space around the content */
+}
+
+/* Headshot Styling */
+.headshot img {
+  width: 150px; /* Sets the image width */
+  height: 150px; /* Sets the image height */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 20px 0; /* Adds space above and below the image */
+}
+
+/* Name and About Me */
+.name {
+  font-size: 2em; /* Makes the name text large */
+  color: #333; /* Dark gray color */
+}
+
+.about-me {
+  font-size: 1.2em; /* Slightly larger text for the About Me section */
+  color: #555; /* Medium gray color */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: flex; /* Aligns lines in a column */
+  flex-direction: column; /* Stacks lines vertically */
+  justify-content: space-between; /* Spaces lines evenly */
+  width: 30px; /* Width of the menu button */
+  height: 20px; /* Height of the menu button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.hamburger div {
+  background-color: white; /* White color for the lines */
+  height: 3px; /* Thickness of each line */
+  width: 100%; /* Full width of the button */
+  border-radius: 2px; /* Rounds the edges of the lines */
+}
+
+/* Hidden Menu */
+.menu {
+  background-color: white; /* White background for the menu */
+  position: absolute; /* Positions the menu relative to the page */
+  top: 50px; /* Distance from the top of the page */
+  right: 10px; /* Distance from the right of the page */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow to the menu */
+  border-radius: 5px; /* Rounds the corners of the menu */
+  padding: 10px; /* Adds space inside the menu */
+  display: none; /* Hides the menu initially */
+  flex-direction: column; /* Stacks links vertically */
+}
+
+.menu a {
+  text-decoration: none; /* Removes underline from links */
+  color: #007BFF; /* Blue color for the links */
+  padding: 5px 0; /* Adds space around each link */
+}
+
+.menu a:hover {
+  text-decoration: underline; /* Underlines links on hover */
+}
+
+/* Show Menu */
+.menu.hidden {
+  display: none; /* Keeps the menu hidden */
+}
+.menu.visible {
+  display: flex; /* Makes the menu visible */
+}
